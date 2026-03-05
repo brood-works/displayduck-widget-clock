@@ -1,0 +1,112 @@
+<div class="clock">
+  {{#if isAnalog()}}
+    <div class="analog-wrapper">
+      <svg class="analog-clock" viewBox="-60 -60 120 120" aria-label="Analog clock">
+        <circle class="dial" cx="0" cy="0" r="46"></circle>
+        <g class="second-ticks">
+          {{#each analogTicks}}
+            <line
+              class="tick"
+              data-analog-tick="true"
+              data-active="{{ showSeconds() ? getAnalogTickDistance(this) : '' }}"
+              x1="0"
+              y1="-38"
+              x2="0"
+              y2="-42"
+              transform="{{ getTickRotation(this) }}">
+            </line>
+          {{/each}}
+        </g>
+        <g class="hour-labels">
+          {{#each analogDigits}}
+            <text
+              class="digit"
+              x="0"
+              y="0"
+              text-anchor="middle"
+              dominant-baseline="middle"
+              transform="{{ getDigitTransform(this) }}">
+              {{ this }}
+            </text>
+          {{/each}}
+        </g>
+        <g class="hands">
+          <line class="hand hour" data-analog-hour="true" x1="0" y1="5" x2="0" y2="-17"></line>
+          <line class="hand minute" data-analog-minute="true" x1="0" y1="8" x2="0" y2="-26"></line>
+        </g>
+        {{#if showSeconds()}}
+          <g class="seconds-marker" data-analog-marker="true">
+            <path d="M -3 -31 L 3 -31 L 0 -36 Z"></path>
+          </g>
+        {{/if}}
+        <circle class="pivot" cx="0" cy="0" r="2.4"></circle>
+      </svg>
+    </div>
+  {{/if}}
+
+  {{#if isDigital()}}
+    <div class="digital-clock">
+      {{#if ledFont()}}
+        <div class="background">
+          <div class="digits led">88</div>
+          <div class="separator led">:</div>
+          <div class="digits led">88</div>
+          {{#if showSeconds()}}
+            <div class="separator led">:</div>
+            <div class="digits led">88</div>
+          {{/if}}
+        </div>
+      {{/if}}
+
+      <div class="digits{{ ledFont() ? ' led' : '' }}" data-clock-hour="true">00</div>
+      <div class="separator{{ ledFont() ? ' led' : '' }}{{ blinkSeparator() ? ' blink' : '' }}">:</div>
+      <div class="digits{{ ledFont() ? ' led' : '' }}" data-clock-minute="true">00</div>
+      {{#if showSeconds()}}
+        <div class="separator{{ ledFont() ? ' led' : '' }}{{ blinkSeparator() ? ' blink' : '' }}">:</div>
+        <div class="digits{{ ledFont() ? ' led' : '' }}" data-clock-second="true">00</div>
+      {{/if}}
+    </div>
+  {{/if}}
+
+  {{#if isFlip()}}
+    <div class="flipclock">
+      <div class="digit-group">
+        {{#each firstFlipPair()}}
+          <div class="digit" data-flip-index="{{ this }}">
+            <span class="digit-full">0</span>
+            <span class="digit-static top"><span class="value">0</span></span>
+            <span class="digit-static bottom"><span class="value">0</span></span>
+            <span class="digit-flip top"><span class="value">0</span></span>
+            <span class="digit-flip bottom"><span class="value">0</span></span>
+          </div>
+        {{/each}}
+      </div>
+      <div class="separator{{ blinkSeparator() ? ' blink' : '' }}">:</div>
+      <div class="digit-group">
+        {{#each secondFlipPair()}}
+          <div class="digit" data-flip-index="{{ this }}">
+            <span class="digit-full">0</span>
+            <span class="digit-static top"><span class="value">0</span></span>
+            <span class="digit-static bottom"><span class="value">0</span></span>
+            <span class="digit-flip top"><span class="value">0</span></span>
+            <span class="digit-flip bottom"><span class="value">0</span></span>
+          </div>
+        {{/each}}
+      </div>
+      {{#if showSeconds()}}
+        <div class="separator{{ blinkSeparator() ? ' blink' : '' }}">:</div>
+        <div class="digit-group">
+          {{#each thirdFlipPair()}}
+            <div class="digit" data-flip-index="{{ this }}">
+              <span class="digit-full">0</span>
+              <span class="digit-static top"><span class="value">0</span></span>
+              <span class="digit-static bottom"><span class="value">0</span></span>
+              <span class="digit-flip top"><span class="value">0</span></span>
+              <span class="digit-flip bottom"><span class="value">0</span></span>
+            </div>
+          {{/each}}
+        </div>
+      {{/if}}
+    </div>
+  {{/if}}
+</div>
