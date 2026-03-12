@@ -12,27 +12,39 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/brood-works/displayduck-widget-clock">
+  <a href="https://github.com/brood-works/displayduck-pack-clocks">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">DisplayDuck Example Widget</h3>
+  <h3 align="center">DisplayDuck Clocks Pack</h3>
 
   <p align="center">
-    Example widget for developers to fork and customize.
+    A pack of 3 clock widgets for DisplayDuck: digital, flip, and analog.
   </p>
 </div>
 
 ---
 
 ## About
-This is an example widget for developers as template to study or fork for custom widgets/plugins in DisplayDuck. (including this ReadMe)
+This pack contains 3 clock widgets for DisplayDuck:
+
+- Digital Clock
+- Flip Clock
+- Analog Clock
+
+Each widget uses the same shared clock component, with its own default style and configuration options.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Getting Started
-This Widget has no requirements and is purely meant to demonstrate posibillities with DisplayDuck.
+This pack has no external requirements.
+
+Install the pack in DisplayDuck and choose one of the 3 included widget types:
+
+- Digital Clock
+- Flip Clock
+- Analog Clock
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -40,13 +52,27 @@ This Widget has no requirements and is purely meant to demonstrate posibillities
 ---
 
 ## Configurable options
+### Digital Clock
 | Setting | Type | Configurable Values | Default Value
 |---|---|---|---|
-| Example Boolean | `boolean` | `true`<br />`false` | `false`
-| Example Color Picker | `color-picker` | `color` | `#ffffff`
-| Example Number | `number` | any `number` | 0
-| Example Select | `dropdown` | `option1`<br />`option2`<br />`option3` | `option1`
-| Example Widget Select | `widget-select` | `widget` | 
+| Widget Style | `select` | `digital` | `digital`
+| Use 24 Hour Format | `boolean` | `true`<br />`false` | `true`
+| Show Seconds | `boolean` | `true`<br />`false` | `false`
+| Use LED Font | `boolean` | `true`<br />`false` | `false`
+| Blinking Separator | `boolean` | `true`<br />`false` | `false`
+
+### Flip Clock
+| Setting | Type | Configurable Values | Default Value
+|---|---|---|---|
+| Widget Style | `select` | `flip` | `flip`
+| Show Seconds | `boolean` | `true`<br />`false` | `false`
+| Blinking Separator | `boolean` | `true`<br />`false` | `false`
+
+### Analog Clock
+| Setting | Type | Configurable Values | Default Value
+|---|---|---|---|
+| Widget Style | `select` | `analog` | `analog`
+| Show Seconds | `boolean` | `true`<br />`false` | `false`
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -67,19 +93,19 @@ Don't forget to give the project a star! Thanks again!
 
 ### Contributors:
 
-<a href="https://github.com/brood-works/displayduck-widget-clock/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=brood-works/displayduck-widget-clock" />
+<a href="https://github.com/brood-works/displayduck-pack-clocks/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=brood-works/displayduck-pack-clocks" />
 </a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/brood-works/displayduck-widget-clock.svg
-[contributors-url]: https://github.com/brood-works/displayduck-widget-clock/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/brood-works/displayduck-widget-clock
-[forks-url]: https://github.com/brood-works/displayduck-widget-clock/network/members
-[stars-shield]: https://img.shields.io/github/stars/brood-works/displayduck-widget-clock
+[contributors-shield]: https://img.shields.io/github/contributors/brood-works/displayduck-pack-clocks.svg
+[contributors-url]: https://github.com/brood-works/displayduck-pack-clocks/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/brood-works/displayduck-pack-clocks
+[forks-url]: https://github.com/brood-works/displayduck-pack-clocks/network/members
+[stars-shield]: https://img.shields.io/github/stars/brood-works/displayduck-pack-clocks
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/brood-works/displayduck-widget-clock
+[issues-shield]: https://img.shields.io/github/issues/brood-works/displayduck-pack-clocks
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
