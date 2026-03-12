@@ -55,7 +55,6 @@ Install the pack in DisplayDuck and choose one of the 3 included widget types:
 ### Digital Clock
 | Setting | Type | Configurable Values | Default Value
 |---|---|---|---|
-| Widget Style | `select` | `digital` | `digital`
 | Use 24 Hour Format | `boolean` | `true`<br />`false` | `true`
 | Show Seconds | `boolean` | `true`<br />`false` | `false`
 | Use LED Font | `boolean` | `true`<br />`false` | `false`
@@ -64,14 +63,12 @@ Install the pack in DisplayDuck and choose one of the 3 included widget types:
 ### Flip Clock
 | Setting | Type | Configurable Values | Default Value
 |---|---|---|---|
-| Widget Style | `select` | `flip` | `flip`
 | Show Seconds | `boolean` | `true`<br />`false` | `false`
 | Blinking Separator | `boolean` | `true`<br />`false` | `false`
 
 ### Analog Clock
 | Setting | Type | Configurable Values | Default Value
 |---|---|---|---|
-| Widget Style | `select` | `analog` | `analog`
 | Show Seconds | `boolean` | `true`<br />`false` | `false`
 
 
