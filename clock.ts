@@ -1,4 +1,4 @@
-import type { WidgetContext, WidgetPayload } from '@displayduck/plugin-framework';
+import type { WidgetContext, WidgetPayload } from '@displayduck/base';
 
 type ClockStyle = 'flip' | 'digital' | 'analog';
 type ClockTime = { h: string; m: string; s: string };
