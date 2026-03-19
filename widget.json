@@ -1,0 +1,102 @@
+{
+  "icon": "fas fa-clock",
+  "name": "Clock",
+  "description": "A pack of 3 clock widgets: digital, flip, and analog.",
+  "version": "1.0.0",
+  "assets": [],
+  "widgets": [
+    {
+      "category": "clock",
+      "id": "clock",
+      "icon": "fas fa-clock",
+      "name": "Digital Clock",
+      "description": "A digital clock widget that displays the current time.",
+      "platform": "all",
+      "minWidth": 200,
+      "minHeight": 100,
+      "config": {
+        "styles": {
+          "type": "select",
+          "options": [],
+          "label": "Widget Style",
+          "defaultValue": "digital",
+          "hidden": true
+        },
+        "use24Hour": {
+          "label": "Use 24 Hour Format",
+          "type": "boolean",
+          "defaultValue": true
+        },
+        "showSeconds": {
+          "label": "Show Seconds",
+          "type": "boolean",
+          "defaultValue": false
+        },
+        "ledFont": {
+          "label": "Use LED Font",
+          "subLabel": "Only affects digital style",
+          "type": "boolean",
+          "defaultValue": false
+        },
+        "blinkSeparator": {
+          "label": "Blinking Separator",
+          "type": "boolean",
+          "defaultValue": false
+        }
+      }
+    },
+    {
+      "category": "clock",
+      "id": "clock",
+      "icon": "fas fa-clock",
+      "name": "Flip Clock",
+      "description": "A flip clock widget that displays the current time.",
+      "platform": "all",
+      "minWidth": 200,
+      "minHeight": 100,
+      "config": {
+        "styles": {
+          "type": "select",
+          "options": [],
+          "label": "Widget Style",
+          "defaultValue": "flip",
+          "hidden": true
+        },
+        "showSeconds": {
+          "label": "Show Seconds",
+          "type": "boolean",
+          "defaultValue": false
+        },
+        "blinkSeparator": {
+          "label": "Blinking Separator",
+          "type": "boolean",
+          "defaultValue": false
+        }
+      }
+    },
+    {
+      "category": "clock",
+      "id": "clock",
+      "icon": "fas fa-clock",
+      "name": "Analog Clock",
+      "description": "An analog clock widget that displays the current time.",
+      "platform": "all",
+      "minWidth": 200,
+      "minHeight": 200,
+      "config": {
+        "styles": {
+          "type": "select",
+          "options": [],
+          "label": "Widget Style",
+          "defaultValue": "analog",
+          "hidden": true
+        },
+        "showSeconds": {
+          "label": "Show Seconds",
+          "type": "boolean",
+          "defaultValue": false
+        }
+      }
+    }
+  ]
+}
