@@ -1,14 +1,14 @@
 {
-  "icon": "fas fa-clock",
+  "icon": "img/icon.png",
   "name": "Clock",
   "description": "A pack of 3 clock widgets: digital, flip, and analog.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "assets": [],
   "widgets": [
     {
       "category": "clock",
       "id": "clock",
-      "icon": "fas fa-clock",
+      "icon": "img/icon-digi.png",
       "name": "Digital Clock",
       "description": "A digital clock widget that displays the current time.",
       "platform": "all",
@@ -54,7 +54,7 @@
     {
       "category": "clock",
       "id": "clock",
-      "icon": "fas fa-clock",
+      "icon": "img/icon-digi.png",
       "name": "Flip Clock",
       "description": "A flip clock widget that displays the current time.",
       "platform": "all",
@@ -83,7 +83,7 @@
     {
       "category": "clock",
       "id": "clock",
-      "icon": "fas fa-clock",
+      "icon": "img/icon.png",
       "name": "Analog Clock",
       "description": "An analog clock widget that displays the current time.",
       "platform": "all",
